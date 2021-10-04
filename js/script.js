@@ -7,7 +7,7 @@ $(function(){
             if (scroll > position - windowHeight + 200){
                 $(function(){
                     $('.fadein').each(function(i){
-                        $(this).delay(i * 400).queue(function(){
+                        $(this).delay(i * 500).queue(function(){
                             $(this).addClass('active');
                         });
                     });

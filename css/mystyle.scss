@@ -606,9 +606,11 @@ dd{
 
 .fadein {
     opacity : 0;
-    transition : all 1s;
+    transform: translateY(40px);
+    transition: opacity 2s, transform .3s;
     &.active{
         opacity: 1;
+        transform: translateY(0px);
     }
   }
     
@@ -673,6 +675,7 @@ footer{
     width: 60px;
     height: 60px;
     display: none;
+    cursor: pointer;
     @include mq(sp) {
        right: 12px;
        bottom: 12px;

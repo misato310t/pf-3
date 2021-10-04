@@ -786,12 +786,18 @@ dd {
 
 .fadein {
   opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: opacity 2s, -webkit-transform .3s;
+  transition: opacity 2s, -webkit-transform .3s;
+  transition: opacity 2s, transform .3s;
+  transition: opacity 2s, transform .3s, -webkit-transform .3s;
 }
 
 .fadein.active {
   opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 footer {
@@ -872,6 +878,7 @@ footer p {
   width: 60px;
   height: 60px;
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
