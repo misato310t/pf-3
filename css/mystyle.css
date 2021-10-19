@@ -12,6 +12,12 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -19,6 +25,16 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    z-index: 14;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 100%;
     z-index: 10;
@@ -61,6 +77,12 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .drawer-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
   .drawer-icon {
     display: block;
   }
@@ -143,6 +165,17 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 60px;
+    margin: 15px 0 0 10px;
+  }
+}
+
 .header-nav {
   padding: 30px 0 0 30px;
 }
@@ -156,6 +189,12 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
   .header-nav {
     display: none;
   }
@@ -176,6 +215,13 @@ video {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  video {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
 .main {
   z-index: -9;
 }
@@ -191,6 +237,12 @@ video {
     width: 100%;
     margin-top: 80px;
     z-index: -9;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main-container {
+    padding-top: 50vh;
   }
 }
 
@@ -215,6 +267,12 @@ video {
 @media screen and (max-width: 767px) {
   .works-inner, .feature-inner, .flow-inner, .contact-inner, .footer-nav {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .works-inner {
+    text-align: center;
   }
 }
 
@@ -263,6 +321,12 @@ video {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sec-ttl::before, .sec-ttl::after {
+    width: 22%;
+  }
+}
+
 .sec-ttl::before {
   margin-right: 2em;
 }
@@ -293,6 +357,12 @@ video {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sec-ttl.contact::before {
+    margin-right: 2em;
+  }
+}
+
 .sec-ttl.contact::after {
   margin-left: 3.5em;
 }
@@ -300,6 +370,12 @@ video {
 @media screen and (max-width: 767px) {
   .sec-ttl.contact::after {
     margin-left: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sec-ttl.contact::after {
+    margin-left: 2em;
   }
 }
 
@@ -424,7 +500,9 @@ video {
 
 @media screen and (max-width: 767px) {
   .works-items1 p, .works-items2 p, .works-items3 p, .works-items4 p {
-    left: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -532,6 +610,13 @@ video {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .flow-inner {
+    text-align: center;
+    display: inline;
+  }
+}
+
 .flow-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,6 +628,12 @@ video {
   .flow-content {
     display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .flow-content {
+    margin-left: 30px;
   }
 }
 
@@ -563,6 +654,12 @@ video {
 @media screen and (max-width: 767px) {
   .flow-box-wrap::before {
     right: 44%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .flow-box-wrap::before {
+    display: none;
   }
 }
 
@@ -690,6 +787,19 @@ dt span {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  dt span {
+    padding-left: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  dt {
+    text-align-last: left;
+    padding-left: 10px;
+  }
+}
+
 dd {
   font-size: 16px;
   margin-left: 30px;
@@ -699,6 +809,12 @@ dd {
 @media screen and (max-width: 767px) {
   dd {
     margin-left: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  dd {
+    text-align-last: left;
   }
 }
 
@@ -728,6 +844,12 @@ dd {
 }
 
 @media screen and (max-width: 767px) {
+  .contact-p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
   .contact-p {
     text-align: center;
   }

@@ -23,6 +23,9 @@ body{
     @include mq(sp) {
        margin-left: 0; 
     }
+    @include mq(tab) {
+       margin-left: 0; 
+    }
 }
 
 header{
@@ -30,6 +33,13 @@ header{
     top: 0;
     left: 0;
     @include mq(sp) {
+        width: 100%;
+        z-index: 10;
+        height: 80px;
+        z-index: 14;
+        background-color: #fff;
+    }
+    @include mq(tab) {
         width: 100%;
         z-index: 10;
         height: 80px;
@@ -59,6 +69,9 @@ header{
     }
     display: none;
     @include mq(sp) {
+       display: block; 
+    }
+    @include mq(tab) {
        display: block; 
     }
 }
@@ -126,6 +139,14 @@ header{
        height: 60px;
        margin: 15px 0 0 10px;
     }
+    @include mq(tab) {
+        position: fixed;
+       top: 0;
+       left: 0; 
+       width: 200px;
+       height: 60px;
+       margin: 15px 0 0 10px;
+    }
 }
 
 
@@ -138,6 +159,9 @@ header{
         }
     }
     @include mq(sp) {
+       display: none; 
+    }
+    @include mq(tab) {
        display: none; 
     }
 }
@@ -153,6 +177,10 @@ video{
         width: auto;
         height: 528px;
     }
+    @include mq(tab) {
+       width: 100vw;
+       height: 70vh;
+    }
 }
 .main{
     z-index: -9;
@@ -166,6 +194,9 @@ video{
         width: 100%;
         margin-top: 80px;
         z-index: -9;
+    }
+    @include mq(tab) {
+       padding-top: 50vh; 
     }
 }
 
@@ -183,6 +214,12 @@ video{
     margin: 0 auto;
     @include mq(sp) {
        max-width: 100%; 
+    }
+}
+
+.works-inner{
+    @include mq(sp) {
+       text-align: center; 
     }
 }
 
@@ -215,6 +252,9 @@ video{
         @include mq(sp) {
            width: 12%; 
         }
+        @include mq(tab) {
+           width: 22%; 
+        }
     }
     &::before{
         margin-right: 2em;
@@ -234,11 +274,17 @@ video{
             @include mq(sp) {
                margin-right: 1em; 
             }
+            @include mq(tab) {
+               margin-right: 2em; 
+            }
         }
         &::after{
             margin-left: 3.5em;
             @include mq(sp) {
                margin-left: 1em; 
+            }
+            @include mq(tab) {
+               margin-left: 2em; 
             }
         }
         @include mq(sp) {
@@ -316,7 +362,8 @@ video{
         left: 7px;
         color: white;
         @include mq(sp) {
-           left: 15px; 
+           left: 50%;
+           transform: translateX(-50%); 
         }
     }
 
@@ -406,6 +453,10 @@ video{
            padding: 0 20px; 
         }
     }
+    @include mq(tab) {
+       text-align: center;
+       display: inline; 
+    }
 }
 
 .flow-content{
@@ -414,6 +465,9 @@ video{
     @include mq(sp) {
        display: block; 
        width: 100%;
+    }
+    @include mq(tab) {
+        margin-left: 30px;
     }
 }
 
@@ -430,6 +484,9 @@ video{
         background-color: #FFDD00;
         @include mq(sp) {
            right: 44%; 
+        }
+        @include mq(tab) {
+           display: none; 
         }
     }
 }
@@ -530,6 +587,13 @@ dt{
         @include mq(sp) {
            margin-left: 20px; 
         }
+        @include mq(tab) {
+           padding-left: 12px; 
+        }
+    }
+    @include mq(tab) {
+       text-align-last: left; 
+       padding-left: 10px;
     }
 }
 
@@ -539,6 +603,9 @@ dd{
     width: 80%;
     @include mq(sp) {
        margin-left: 60px; 
+    }
+    @include mq(tab) {
+       text-align-last: left; 
     }
 }
 
@@ -560,6 +627,9 @@ dd{
 
 .contact-p{
     @include mq(sp) {
+       text-align: center; 
+    }
+    @include mq(tab) {
        text-align: center; 
     }
 }
